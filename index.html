@@ -1,115 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        h1, h2, h3 {
-            margin-bottom: 10px;
-        }
-        p {
-            margin: 10px 0;
-        }
-        ul {
-            padding: 0;
-            margin: 10px 0;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miki Kumari - Full Stack Developer Resume</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    .navbar {
+      background-color: #2c3e50;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      color: #ecf0f1 !important;
+    }
+    .container {
+      max-width: 960px;
+    }
+    h1, h2 {
+      font-weight: 700;
+    }
+    h4 {
+      font-weight: 500;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .lead {
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    .list-unstyled li {
+      margin-bottom: 0.5em;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 1em 0;
+    }
+    .social-icons a {
+      margin: 0 0.5em;
+      font-size: 1.5em;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <header>
-            <h1>Your Name</h1>
-            <p>Job Title / Desired Position</p>
-            <p>Contact Information: email@example.com | Phone: (123) 456-7890 | LinkedIn: linkedin.com/in/yourprofile</p>
-        </header>
-        
-        <section>
-            <h2>Summary</h2>
-            <p>A brief summary highlighting your key skills, experience, and career goals.</p>
-        </section>
-        
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <h3>Job Title</h3>
-                    <p><strong>Company Name</strong> | City, State | Month Year - Month Year</p>
-                    <ul>
-                        <li>Description of responsibilities and achievements in bullet points.</li>
-                        <li>Additional responsibilities or achievements as necessary.</li>
-                    </ul>
-                </li>
-                <!-- Repeat this block for each job experience -->
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>Degree Program</h3>
-                    <p><strong>University Name</strong> | City, State | Month Year - Month Year</p>
-                    <p>Description of degree earned and relevant coursework.</p>
-                </li>
-                <!-- Repeat this block for each degree or relevant education -->
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <!-- List your skills here -->
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project Title</h3>
-                    <p>Brief description of the project and your role.</p>
-                </li>
-                <!-- Repeat this block for each relevant project -->
-            </ul>
-        </section>
-        
-        <section>
-            <h2>Awards & Certifications</h2>
-            <ul>
-                <li>Award or Certification 1</li>
-                <li>Award or Certification 2</li>
-                <!-- List any awards or certifications you have received -->
-            </ul>
-        </section>
-        
-        <footer>
-            <p>References available upon request</p>
-        </footer>
-        
-    </div> <!-- .container -->
+      <a class="navbar-brand" href="#">Miki Kumari</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#training">Training/Certification</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5 pt-5">
+    <!-- Profile Section -->
+    <section id="profile" class="mb-5">
+      <div class="row align-items-center text-center text-lg-start">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="/images/img.jpeg" alt="Miki Kumari" class="profile-img">
+        </div>
+        <div class="col-lg-8">
+          <h1 class="mb-3">Miki Kumari</h1>
+          <p class="lead mb-2">Full Stack Developer</p>
+          <p class="lead mb-3">New Delhi, India</p>
+          <ul class="list-unstyled mb-0">
+            <li><i class="fas fa-phone-alt"></i> +91-8368177848</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:impradhan711@gmail.com">impradhan711@gmail.com</a></li>
+            <li><i class="fab fa-linkedin"></i> <a href="#">LinkedIn Profile</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="mb-5">
+      <h2 class="mb-3 text-center">Education</h2>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h4>MCA</h4>
+          <p class="mb-1">Maharshi Dayanand University</p>
+          <p>Aug 2019 - June 2021</p>
+          <p>CGPA: 82%</p>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <h4>BCA</h4>
+          <p class="mb-1">Maharshi Dayanand University</p>
+          <p>Aug 2016 - June 2019</p>
+          <p>CGPA: 79%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="mb-5">
+      <h2 class="mb-3 text-center">Work Experience</h2>
+
+      <!-- Job 1 -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <h4 class="card-title">Software Developer</h4>
+          <p class="card-text"><strong>KESTONE INTEGRATED MARKETING SERVICES (VOSMOS)</strong></p>
+          <p class="card-text"><i>New Delhi</i></p>
+          <p class="card-text">July 2022 - Present</p>
+          <ul>
+            <li>Crafted "Vosmos" a 3D virtual ecommerce platform utilizing Node.js, React.js, Three.js, Unity, and MongoDB.</li>
+            <li>Enhanced with Next.js for faster loading and SEO improvement.</li>
+            <li>Engineered interactive event hosting platform using React, .NET, and Redux.</li>
+            <li>Built CRM Smartworks with Next.js, MongoDB, and Bootstrap.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <h4 class="card-title">Software Developer</h4>
+          <p class="card-text"><strong>MAMSYS CONSULTING SERVICES PVT. LTD</strong></p>
+          <p class="card-text">Aug 2021 – July 2022</p>
+          <ul>
+            <li>Worked on maintaining and developing projects related to medical systems.</li>
+            <li>Created responsive interfaces in agile environments.</li>
+            <li>Managed code releases on different servers (UAT and PROD).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="card mb-3">
+        <div class="card-body">
+          <h4 class="card-title">Software Developer Trainee</h4>
+          <p class="card-text"><strong>Mobiloitte Technologies</strong></p>
+          <p class="card-text">Apr 2021 - Aug 2021</p>
+          <ul>
+            <li>Built dynamic web applications using React and Node.js.</li>
+            <li>Implemented CRUD APIs and integrated backend databases.</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="mb-5">
+      <h2 class="mb-3 text-center">Key Skills</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Technical Skills</h4>
+          <ul>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Redux</li>
+            <li>Next.js</li>
+            <li>MongoDB</li>
+            <li>Express.js</li>
+            <li>Socket.io</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h4>UI/UX Tools</h4>
+          <ul>
+            <li>Bootstrap</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Material UI</li>
+            <li>Ant Design UI (Antd)</li>
+            <li>ShadCN-UI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training/Certification Section -->
+    <section id="training">
+      <h2 class="mb-3 text-center">Training/Certification</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Certification</h4>
+          <ul>
+            <li>Udemy Learning: MERN Stack Project</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h4>Learning</h4>
+          <ul>
+            <li>IQuest Technology: Online Fee Project, July 2017</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <div class="social-icons mb-3">
+          <p>&copy; 2024 Miki Kumari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
